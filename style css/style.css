@@ -46,7 +46,6 @@
 .menu ul li a {
     display: block;
     text-decoration: none;
-    font-variant: small-caps;
     font-size: 20px;
     color: white;
     padding: 0 10px;
