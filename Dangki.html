@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đơn Đăng Ký Nhập Học</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: lightslategray;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+        
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        button {
+            width: 100%;
+            background-color: #28a745;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2><i class="fas fa-user-graduate"></i> Đơn Đăng Ký Nhập Học</h2>
+        <form>
+            <label for="phuhuynh">Họ và tên phụ huynh/người giám hộ:</label>
+            <input type="text" id="phuhuynh" name="phuhuynh" required>
+
+            <label for="cmnd">CMND/CCCD số:</label>
+            <input type="text" id="cmnd" name="cmnd" required>
+
+            <label for="diachi">Địa chỉ thường trú:</label>
+            <input type="text" id="diachi" name="diachi" required>
+
+            <label for="sdt">Số điện thoại liên hệ:</label>
+            <input type="text" id="sdt" name="sdt" required>
+
+            <label for="hocsinh">Họ và tên học sinh:</label>
+            <input type="text" id="hocsinh" name="hocsinh" required>
+
+            <label for="ngaysinh">Ngày sinh:</label>
+            <input type="date" id="ngaysinh" name="ngaysinh" required>
+
+            <label for="gioitinh">Giới tính:</label>
+            <select id="gioitinh" name="gioitinh">
+                <option value="Nam">Nam</option>
+                <option value="Nữ">Nữ</option>
+                <option value="Khác">Khác</option>
+            </select>
+
+            <label for="truongthcs">Trường THCS đã học:</label>
+            <input type="text" id="truongthcs" name="truongthcs" required>
+
+            <label for="lop">Lớp đăng ký:</label>
+            <input type="text" id="lop" name="lop" required>
+
+            <label for="nguyenvong">Nguyện vọng khác (nếu có):</label>
+            <textarea id="nguyenvong" name="nguyenvong"></textarea>
+
+            <button type="submit"><i class="fas fa-paper-plane"></i> Gửi Đơn</button>
+        </form>
+    </div>
+</body>
+
+</html>

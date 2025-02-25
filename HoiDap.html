@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hỏi Đáp Trường THPT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: lightslategray;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+        
+        .faq {
+            margin-bottom: 20px;
+        }
+        
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            transition: background 0.3s;
+        }
+        
+        .question:hover {
+            background-color: #0056b3;
+        }
+        
+        .answer {
+            display: none;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            background-color: #f9f9f9;
+        }
+        
+        .question-box {
+            margin-top: 30px;
+            padding: 25px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        input,
+        textarea,
+        button {
+            width: 100%;
+            padding: 12px;
+            margin: 6px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        
+        button {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            answer.style.display = answer.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h2><i class="fas fa-question-circle"></i> Hỏi - Đáp </h2>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer('answer1')">1. Thời gian tuyển sinh của trường là khi nào?</div>
+            <div class="answer" id="answer1">Thời gian tuyển sinh thường diễn ra vào tháng 6 và tháng 7 hàng năm.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer('answer2')">2. Các môn học chính tại trường là gì?</div>
+            <div class="answer" id="answer2">Trường giảng dạy các môn chính theo chương trình của Bộ GD&ĐT, bao gồm Toán, Văn, Anh, Lý, Hóa, Sinh, Lịch sử, Địa lý, GDCD, và Tin học.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer('answer3')">3. Học phí tại trường có cao không?</div>
+            <div class="answer" id="answer3">Trường thu học phí theo quy định của nhà nước. Ngoài ra, có chính sách hỗ trợ học sinh có hoàn cảnh khó khăn.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer('answer4')">4. Trường có chương trình học bổng không?</div>
+            <div class="answer" id="answer4">Trường có chương trình học bổng dành cho học sinh có thành tích xuất sắc và học sinh có hoàn cảnh đặc biệt.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer('answer5')">5. Làm thế nào để liên hệ với nhà trường?</div>
+            <div class="answer" id="answer5">Bạn có thể liên hệ qua số điện thoại của trường hoặc email chính thức đăng trên website.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer('answer6')">6. Trường có các câu lạc bộ ngoại khóa không?</div>
+            <div class="answer" id="answer6">Có, trường có nhiều câu lạc bộ như thể thao, âm nhạc, khoa học, và ngoại ngữ để học sinh tham gia.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer('answer7')">7. Học sinh có thể đăng ký xe đưa đón không?</div>
+            <div class="answer" id="answer7">Có, trường có dịch vụ xe đưa đón học sinh theo tuyến đường cố định.</div>
+        </div>
+
+        <div class="question-box">
+            <h3>Gửi câu hỏi khác</h3>
+            <form>
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="question">Câu hỏi của bạn:</label>
+                <textarea id="question" name="question" rows="4" required></textarea>
+
+                <button type="submit">Gửi câu hỏi</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

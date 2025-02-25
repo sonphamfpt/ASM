@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightslategray;
+        }
+        
+        header {
+            background-color: #007b5e;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #00684d;
+            padding: 10px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #ffcc00;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .news-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .news-item {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        
+        .news-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .news-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .news-content {
+            padding: 15px;
+        }
+        
+        .news-title {
+            font-size: 1.5em;
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        
+        .news-description {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007b5e;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><i class="fas fa-school"></i> THPT Nguyễn Hiền - Tin Tức Hoạt Động</h1>
+    </header>
+    <div class="container">
+        <section class="news-section">
+            <div class="news-item">
+                <img src="images/khaigiang.jpg" alt="Tin Tức 1">
+                <div class="news-content">
+                    <h2 class="news-title"><i class="fas fa-bullhorn"></i> Lễ Khai Giảng Năm Học 2024-2025</h2>
+                    <p class="news-description"> Vào sáng ngày 05/09, hòa chung vào không khí tưng bừng, náo nhiệt của tuổi trẻ cả nước chào đón năm học mới, trường THPT Nguyễn Hiền đã long trọng tổ chức Lễ Khai giảng năm học 2024 -2025.
+                    </p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="images/begiang.jpg" alt="Tin Tức 2">
+                <div class="news-content">
+                    <h2 class="news-title"><i class="fas fa-certificate"></i> Lễ Bế Giảng Năm Học 2023-2024</h2>
+                    <p class="news-description">Sáng ngày 29 tháng 5 năm 2024, thầy và trò trường THPT Nguyễn Hiền long trọng tổ chức Lễ Tuyên dương khen thưởng và Bế giảng năm học 2023-2024
+                    </p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="images/ngaynhagiao.jpg" alt="Tin Tức 3">
+                <div class="news-content">
+                    <h2 class="news-title"><i class="fas fa-chalkboard-teacher"></i> Lễ Kỷ Niệm 41 Năm Ngày Nhà Giáo Việt Nam</h2>
+                    <p class="news-description">Sáng ngày 18.11.2023, trường THPT Nguyễn Hiền long trọng tổ chức lễ kỉ niệm 41 năm ngày nhà giáo Việt Nam và đón cờ thi đua xuất sắc dẫn đầu toàn tỉnh.</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="images/thethao2.png" alt="Tin Tức 4">
+                <div class="news-content">
+                    <h2 class="news-title"><i class="fas fa-running"></i> Ngày Hội Thể Dục Thể Thao</h2>
+                    <p class="news-description">Ngày hội thể dục thể thao của trường THPT Nguyễn Hiền diễn ra thành công tốt đẹp với nhiều hoạt động sôi nổi và đầy hào hứng.</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="images/trian.jpg" alt="Tin Tức 5">
+                <div class="news-content">
+                    <h2 class="news-title"><i class="fas fa-running"></i> Tri ân thầy cô về hưu</h2>
+                    <p class="news-description">“Tháng năm dầu dãi nắng mưa Con đò tri thức thầy đưa bao người…” Toàn thể hội đồng sư phạm, các em học sinh trường THPT Nguyễn Hiền xin kính chúc thầy giáo Nguyễn Kim Chương về nghỉ hưu theo chế độ vui khoẻ, bình an và hạnh phúc</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="images/danhgiakiemdinh.jpg" alt="Tin Tức 4">
+                <div class="news-content">
+                    <h2 class="news-title"><i class="fas fa-running"></i> Đánh giá kiểm định chất lượng</h2>
+                    <p class="news-description">Chiều ngày 30/12/2022, Hội đồng sư phạm nhà trường đã tiếp đoàn đánh giá ngoài của Sở giáo dục và đào tạo Quảng Nam về kiểm định chất lượng và công nhận trường chuẩn quốc gia mức độ 2. Đoàn kiểm tra
+                        gồm 5 thành viên do Thầy giáo Thái Viết Tường - Giám đốc Sở làm trưởng đoàn.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 THPT Nguyễn Hiền. Mọi quyền được bảo lưu.</p>
+        <p>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </p>
+    </footer>
+</body>
+
+</html>
