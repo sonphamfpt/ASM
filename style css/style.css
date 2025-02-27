@@ -97,6 +97,7 @@ marquee {
     line-height: 25px;
     min-height: 25px;
     z-index: -1;
+    pointer-events: none;
 }
 
 .content {
